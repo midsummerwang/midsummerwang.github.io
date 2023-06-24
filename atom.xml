@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>北半球的盛夏&#39;s Blog</title>
+  <title>北半球的盛夏&#39;s Space</title>
   
   <subtitle>分享知识，分享快乐</subtitle>
   <link href="https://midsummerwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://midsummerwang.github.io/"/>
-  <updated>2023-06-24T06:51:15.019Z</updated>
+  <updated>2023-06-24T13:59:52.451Z</updated>
   <id>https://midsummerwang.github.io/</id>
   
   <author>
@@ -17,63 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试博客</title>
-    <link href="https://midsummerwang.github.io/7266.html"/>
-    <id>https://midsummerwang.github.io/7266.html</id>
-    <published>2023-06-23T18:42:32.000Z</published>
-    <updated>2023-06-24T06:51:15.019Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="集合框架篇"><a href="#集合框架篇" class="headerlink" title="集合框架篇"></a>集合框架篇</h1><h2 id="Collection接口"><a href="#Collection接口" class="headerlink" title="Collection接口"></a>Collection接口</h2><h3 id="List接口"><a href="#List接口" class="headerlink" title="List接口"></a>List接口</h3><ul><li><p>动态数组，有序（输入顺序），可重复</p></li><li><p>实现类：ArrayList（主要）、LinkedList和Vector</p></li></ul><h4 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h4><ul><li>主要实现类，线程不安全，底层结构是Object[]数组，因此查找、添加效率高</li></ul><h5 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h5><ul><li><p>JDK7  类似于饿汉式</p><ul><li>ArrayList<String> list &#x3D; new ArrayList&lt;&gt;();底层初始创建长度为10的Object数组，如果底层结构容量不够，则扩容，默认情况下，扩容为原来的容量的1.5倍，同时将原有数组复制到新的数组</li></ul></li><li><p>JDK8  类似于懒汉式</p><ul><li>底层初始未创建长度为10的数组，延迟数组创建，节省内存</li><li>第一次调用add（）方法时才创建长度为10的数组</li></ul></li><li><p>开发建议：如果长度基本确定，建议使用有参构造器，避免扩容与复制数组的操作</p></li></ul><h4 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h4><ul><li>底层是双链表结构，对于频繁的删除、插入效率比ArrayList高，但查找、添加效率低于ArrayList</li></ul><h4 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h4><ul><li>古老实现类，线程安全，效率较低，底层结构是Object[]数组，自动扩容时扩容为原来的2倍，基本不使用</li></ul><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    ArrayList&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    <span class="comment">//常用方法</span></span><br><span class="line">    list.add(<span class="string">&quot;我ddddddddddddddddddddddddddddddddddddddddddddddddfdsdfadsfadsfasdfasdfasdddddddddddd&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;是&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;大&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;帅&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;哥&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;吗&quot;</span>);</span><br><span class="line">    System.out.println(list);</span><br><span class="line">    System.out.println(list.get(<span class="number">5</span>));</span><br><span class="line">    System.out.println(list.indexOf(<span class="string">&quot;大&quot;</span>));</span><br><span class="line">    list.set(<span class="number">0</span>, <span class="string">&quot;他&quot;</span>);</span><br><span class="line">    System.out.println(list.remove(<span class="number">5</span>));</span><br><span class="line">    System.out.println(list);</span><br><span class="line">    System.out.println(list.size());</span><br><span class="line">    System.out.println(list.subList(<span class="number">2</span>, <span class="number">5</span>));</span><br><span class="line">    <span class="type">int</span>[] s = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">54</span>, <span class="number">43</span>, <span class="number">3</span>, <span class="number">34</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">4342</span>, <span class="number">345</span>, <span class="number">345</span>, <span class="number">234</span>, <span class="number">5234</span>, <span class="number">5234</span>, <span class="number">523</span>, <span class="number">45</span>, <span class="number">2345</span>, <span class="number">2345</span>, <span class="number">3245</span>, <span class="number">234</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">关于Java集合框架的学习记录</summary>
-    
-    
-    
-    <category term="Java" scheme="https://midsummerwang.github.io/categories/Java/"/>
-    
-    
-    <category term="集合框架" scheme="https://midsummerwang.github.io/tags/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My first blog with Hexo</title>
-    <link href="https://midsummerwang.github.io/45907.html"/>
-    <id>https://midsummerwang.github.io/45907.html</id>
-    <published>2023-06-23T14:44:36.000Z</published>
-    <updated>2023-06-24T06:51:15.022Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Redis学习记录"><a href="#Redis学习记录" class="headerlink" title="Redis学习记录"></a>Redis学习记录</h2><p>Redis是一个非关系型数据库，以键值对的形式保存数据。</p><h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>By 北半球的盛夏</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Redis学习记录&quot;&gt;&lt;a href=&quot;#Redis学习记录&quot; class=&quot;headerlink&quot; title=&quot;Redis学习记录&quot;&gt;&lt;/a&gt;Redis学习记录&lt;/h2&gt;&lt;p&gt;Redis是一个非关系型数据库，以键值对的形式保存数据。&lt;/p&gt;
-&lt;h2 id=&quot;E</summary>
-      
-    
-    
-    
-    
-    <category term="Redis" scheme="https://midsummerwang.github.io/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://midsummerwang.github.io/16107.html"/>
     <id>https://midsummerwang.github.io/16107.html</id>
     <published>2023-06-23T14:34:36.472Z</published>
-    <updated>2023-06-24T06:51:15.021Z</updated>
+    <updated>2023-06-24T13:59:52.451Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">本站初始博客，主要介绍一些基本操作，如部署网站：hexo deploy/hexo d</summary>
     
     
     
