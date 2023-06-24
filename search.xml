@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>My first blog with Hexo</title>
+    <url>//45907.html</url>
+    <content><![CDATA[<h2 id="Redis学习记录"><a href="#Redis学习记录" class="headerlink" title="Redis学习记录"></a>Redis学习记录</h2><p>Redis是一个非关系型数据库，以键值对的形式保存数据。</p>
+<h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>By 北半球的盛夏</p>
+]]></content>
+      <tags>
+        <tag>Redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>//16107.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,16 +27,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>My first blog with Hexo</title>
-    <url>//45907.html</url>
-    <content><![CDATA[<h2 id="Redis学习记录"><a href="#Redis学习记录" class="headerlink" title="Redis学习记录"></a>Redis学习记录</h2><p>Redis是一个非关系型数据库，以键值对的形式保存数据。</p>
-<h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>By 北半球的盛夏</p>
-]]></content>
-      <tags>
-        <tag>Redis</tag>
-      </tags>
   </entry>
   <entry>
     <title>测试博客</title>
