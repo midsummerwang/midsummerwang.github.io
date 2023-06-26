@@ -4337,17 +4337,6 @@ body {
     overflow: hidden;
 }
 
-/* #post .post-copyright:before {
-    right: -26px;
-    top: -120px;
-    content: '\f25e';
-    font-size: 200px;
-    font-family: 'Font Awesome 5 Brands';
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-} */
-
 
 #article-container {
   word-wrap: break-word;
@@ -6252,17 +6241,6 @@ body {
     border-radius: 12px !important;
     overflow: hidden;
 }
-
-/* #post .post-copyright:before {
-    right: -26px;
-    top: -120px;
-    content: '\f25e';
-    font-size: 200px;
-    font-family: 'Font Awesome 5 Brands';
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-} */
 
 
 .search-dialog {
