@@ -6,7 +6,7 @@
   <link href="https://midsummerwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://midsummerwang.github.io/"/>
-  <updated>2023-06-25T21:42:05.880Z</updated>
+  <updated>2023-06-26T15:15:26.762Z</updated>
   <id>https://midsummerwang.github.io/</id>
   
   <author>
@@ -17,19 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://midsummerwang.github.io/16107.html"/>
-    <id>https://midsummerwang.github.io/16107.html</id>
-    <published>2023-06-23T14:34:36.472Z</published>
-    <updated>2023-06-25T21:42:05.880Z</updated>
+    <title>毕业前的我 (一)</title>
+    <link href="https://midsummerwang.github.io/11685.html"/>
+    <id>https://midsummerwang.github.io/11685.html</id>
+    <published>2023-06-26T14:00:01.000Z</published>
+    <updated>2023-06-26T15:15:26.762Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><p>底层初始创建长度为10的Object数组，如果底层结构容量不够，则扩容，默认情况下，扩容为原来的容量的1.5倍，同时将原有数组复制到新的数组</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    ArrayList&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    <span class="comment">//常用方法</span></span><br><span class="line">    list.add(<span class="string">&quot;我&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;是&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;大&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;帅&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;哥&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;吗&quot;</span>);</span><br><span class="line">    System.out.println(list);</span><br><span class="line">    System.out.println(list.get(<span class="number">5</span>));</span><br><span class="line">    System.out.println(list.indexOf(<span class="string">&quot;大&quot;</span>));</span><br><span class="line">    list.set(<span class="number">0</span>, <span class="string">&quot;他&quot;</span>);</span><br><span class="line">    System.out.println(list.remove(<span class="number">5</span>));</span><br><span class="line">    System.out.println(list);</span><br><span class="line">    System.out.println(list.size());</span><br><span class="line">    System.out.println(list.subList(<span class="number">2</span>, <span class="number">5</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">本站初始博客，主要介绍一些基本操作，如部署网站：hexo deploy/hexo d</summary>
+    <content type="html"><![CDATA[<h1 id="毕业前的最后一次校园长跑"><a href="#毕业前的最后一次校园长跑" class="headerlink" title="毕业前的最后一次校园长跑"></a>毕业前的最后一次校园长跑</h1><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230626221321.jpg"></p><p>　　2023年6月26日晚，决定去学校跑一跑，一开始说是怎么也要跑个5公里(像以前一样)，但最后发现真跑不动了&#x2F;(ㄒoㄒ)&#x2F;~~。说起来也有一年多快两年的时间没怎么跑了，中间虽然陆陆续续跑过几次，但一直没有长期坚持，跑步这玩意长时间不跑真的会退步，真的。现在跑3公里+，速度还慢的时间足够以前跑完5公里了，甚至还有几分钟多，而且跑完更是直接累的不得了(虽然腿依旧不会酸。此时此刻，万千思绪，加油吧，少年……</p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230626223519.jpg" alt="" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230626221313.jpg" alt="" style="zoom:25%;" /><hr><ul><li>本站第一篇正式博客</li></ul>]]></content>
     
     
+    <summary type="html">纪念本科毕业前夕的那段日子......</summary>
     
+    
+    
+    <category term="毕业季" scheme="https://midsummerwang.github.io/categories/%E6%AF%95%E4%B8%9A%E5%AD%A3/"/>
+    
+    
+    <category term="跑步" scheme="https://midsummerwang.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
     
   </entry>
   

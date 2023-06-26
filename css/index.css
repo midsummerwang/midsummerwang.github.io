@@ -4302,9 +4302,57 @@ h1.page-title + .tag-cloud-list {
   line-height: 24px;
   cursor: pointer;
 }
+@font-face{
+    font-family:'a' ;  /* 字体名自定义即可 */
+    src:url('/font/Alimama_DongFangDaKai_Regular.woff'); /* 东方大楷 主字体 */
+    font-display: swap;
+}
+
+@font-face{
+    font-family:'c' ;  /* 字体名自定义即可 */
+    src:url('/font/YeZiGongChangJingHongXingKai-2.ttf');
+    font-display: swap;
+}
+
+@font-face{
+    font-family:'e' ;  /* 字体名自定义即可 */
+    src:url('/font/Hack-BoldItalic.ttf'); /*  代码字体Hack  */
+    font-display: swap;
+}
+
+body {
+    font-family: 'a';
+    font-size: 16px;
+}
+
+#page-header #site-title, #nav .site-name {
+    font-family: 'c' !important;
+}
+
+#post .post-copyright {
+    background: linear-gradient(45deg, #e6c6e6, #bac0ed);
+    /* background: url("/img/bg.jpg"); */
+    box-shadow: 2px 2px 5px;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* #post .post-copyright:before {
+    right: -26px;
+    top: -120px;
+    content: '\f25e';
+    font-size: 200px;
+    font-family: 'Font Awesome 5 Brands';
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+} */
+
+
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  ol: ,;
 }
 #article-container a {
   color: #99a9bf;
@@ -4343,17 +4391,15 @@ h1.page-title + .tag-cloud-list {
   font-family: Monaco, 'Ubuntu Mono', monospace;
   line-height: 1em;
 }
-#article-container ol ol,
-#article-container ul ol,
-#article-container ol ul,
+#article-container ul {
+  ol: ,;
+}
 #article-container ul ul {
   padding-left: 20px;
 }
-#article-container ol li,
 #article-container ul li {
   margin: 4px 0;
 }
-#article-container ol p,
 #article-container ul p {
   margin: 0 0 8px;
 }
@@ -6198,6 +6244,25 @@ body {
 #page-header #site-title, #nav .site-name {
     font-family: 'c' !important;
 }
+
+#post .post-copyright {
+    background: linear-gradient(45deg, #e6c6e6, #bac0ed);
+    /* background: url("/img/bg.jpg"); */
+    box-shadow: 2px 2px 5px;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* #post .post-copyright:before {
+    right: -26px;
+    top: -120px;
+    content: '\f25e';
+    font-size: 200px;
+    font-family: 'Font Awesome 5 Brands';
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+} */
 
 
 .search-dialog {
