@@ -8,4 +8,5 @@ https://midsummerwang.github.io/link/index.html
 https://midsummerwang.github.io/categories/index.html
 https://midsummerwang.github.io/
 https://midsummerwang.github.io/tags/Vue%E6%A1%86%E6%9E%B6/
+https://midsummerwang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/
 https://midsummerwang.github.io/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/
