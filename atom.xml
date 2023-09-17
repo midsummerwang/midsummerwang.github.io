@@ -6,7 +6,7 @@
   <link href="https://midsummerwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://midsummerwang.github.io/"/>
-  <updated>2023-09-17T10:46:22.505Z</updated>
+  <updated>2023-09-17T11:16:14.805Z</updated>
   <id>https://midsummerwang.github.io/</id>
   
   <author>
@@ -17,94 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>毕业找工作的那些日子--长沙站</title>
-    <link href="https://midsummerwang.github.io/44869.html"/>
-    <id>https://midsummerwang.github.io/44869.html</id>
-    <published>2023-07-19T14:18:51.000Z</published>
-    <updated>2023-09-17T10:46:22.505Z</updated>
+    <title>Vue 学习记录(一)</title>
+    <link href="https://midsummerwang.github.io/6407.html"/>
+    <id>https://midsummerwang.github.io/6407.html</id>
+    <published>2023-09-17T10:54:37.000Z</published>
+    <updated>2023-09-17T11:16:14.805Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="毕业找工作的那些日子–长沙站"><a href="#毕业找工作的那些日子–长沙站" class="headerlink" title="毕业找工作的那些日子–长沙站"></a>毕业找工作的那些日子–长沙站</h1><p>　　今天到湖南长沙进行现场面试，虽然知道没啥希望，但还是选择去了，不仅是为了工作，还为了我一直想出省的想法。距离上一次出江西省都不知道多少年了，而且记忆远没有今天来的深刻，因为什么？这是我第一次独自一人做高铁出江西省，虽然这次出江西省的最终目的的结果可能并不好，但我依然为这次出行感到开心。(依旧是像素感人系列</p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719224415.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719224542.jpg" alt="还能看到湖南大学"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719223845.jpg" alt="其实这张是临走时拍的"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719224113.jpg" alt="现场的感觉，照片是一点体会不出来"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719224741.jpg" alt="这就是面试地点附近的一个湖--后湖"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719224927.jpg" alt="当时云黑压压的，赶上了下雨，本来能多坐一伙"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719225123.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230719225253.jpg"></p><ul><li>一天来回共走了2万多步，人走麻了，高铁加地铁坐麻了</li><li>下次坐高铁一定选靠窗，一路不知错过了多少好风景o(TヘTo)</li></ul><p>加油吧少年，你的路还很长……</p>]]></content>
-    
-    
-    <summary type="html">纪念本科毕业找工作的那段让人记忆深刻的时光......</summary>
+    <content type="html"><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2><ul><li>插值语法 -用于解析标签体</li><li>指令语法 -用于解析标签(包括属性、标签体等)</li></ul><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;test1&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>hello, &#123;&#123;str.toUpperCase()&#125;&#125;, today &#123;&#123;Date.now()&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>指令语法：<span class="tag">&lt;<span class="name">a</span> <span class="attr">:href</span>=<span class="string">&quot;url&quot;</span>&gt;</span>百度一下<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;文本&quot;</span> <span class="attr">id</span>=<span class="string">&quot;text1&quot;</span> <span class="attr">:value</span>=<span class="string">&quot;school.str&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">el</span>: <span class="string">&#x27;#test1&#x27;</span>,                      <span class="comment">//用于指定vue实例为哪个容器服务</span></span></span><br><span class="line"><span class="language-javascript">            <span class="attr">data</span>: &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">str</span>: <span class="string">&quot;summer&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">url</span>: <span class="string">&quot;https://www.baidu.com&quot;</span></span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">        &#125;);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li><p>v-bind：将url作为表达式解析，读取实例中的url值，可简写为’:’</p></li><li><p>Vue实例与容器：一对一的关系，一个Vue实例服务一个容器，一个容器对应一个Vue实例</p></li></ul><h2 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h2><p>未完……</p>]]></content>
     
     
-    
-    <category term="找工作的那些日子" scheme="https://midsummerwang.github.io/categories/%E6%89%BE%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%82%A3%E4%BA%9B%E6%97%A5%E5%AD%90/"/>
-    
-    
-    <category term="应届生求职" scheme="https://midsummerwang.github.io/tags/%E5%BA%94%E5%B1%8A%E7%94%9F%E6%B1%82%E8%81%8C/"/>
-    
-    <category term="长沙" scheme="https://midsummerwang.github.io/tags/%E9%95%BF%E6%B2%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>毕业当天的我 (三)</title>
-    <link href="https://midsummerwang.github.io/58496.html"/>
-    <id>https://midsummerwang.github.io/58496.html</id>
-    <published>2023-06-29T09:33:42.000Z</published>
-    <updated>2023-09-17T10:45:57.484Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="毕业当天的我-三"><a href="#毕业当天的我-三" class="headerlink" title="毕业当天的我 (三)"></a>毕业当天的我 (三)</h1><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_071947.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_071949.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_074029.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_075406.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_080703.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_080704.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_082436.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_083438.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_084416.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_084419.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_084900.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_084910.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/mmexport1687949342975.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/mmexport1687837800498.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/IMG_20230628_085013.jpg"></p>]]></content>
-    
-    
-    <summary type="html">纪念本科毕业前夕的那段日子......</summary>
+    <summary type="html">记录Vue框架从零开始学习的历程，包括但不限于一些总结、遇到的问题......</summary>
     
     
     
-    <category term="毕业季" scheme="https://midsummerwang.github.io/categories/%E6%AF%95%E4%B8%9A%E5%AD%A3/"/>
+    <category term="学习记录" scheme="https://midsummerwang.github.io/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="瑶湖校区" scheme="https://midsummerwang.github.io/tags/%E7%91%B6%E6%B9%96%E6%A0%A1%E5%8C%BA/"/>
-    
-    <category term="毕业典礼" scheme="https://midsummerwang.github.io/tags/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>毕业前的我 (二)</title>
-    <link href="https://midsummerwang.github.io/60673.html"/>
-    <id>https://midsummerwang.github.io/60673.html</id>
-    <published>2023-06-27T08:31:03.000Z</published>
-    <updated>2023-09-17T10:46:09.809Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="毕业合影"><a href="#毕业合影" class="headerlink" title="毕业合影"></a>毕业合影</h1><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164031.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164352.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164516.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164822.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164913.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627164947.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165039.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165203.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165238.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165328.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165406.jpg"><br><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230627165619.jpg" alt="上个厕所就错过啦，呜呜"></p>]]></content>
-    
-    
-    <summary type="html">纪念本科毕业前夕的那段日子......</summary>
-    
-    
-    
-    <category term="毕业季" scheme="https://midsummerwang.github.io/categories/%E6%AF%95%E4%B8%9A%E5%AD%A3/"/>
-    
-    
-    <category term="毕业合照" scheme="https://midsummerwang.github.io/tags/%E6%AF%95%E4%B8%9A%E5%90%88%E7%85%A7/"/>
-    
-    <category term="瑶湖校区" scheme="https://midsummerwang.github.io/tags/%E7%91%B6%E6%B9%96%E6%A0%A1%E5%8C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>毕业前的我 (一)</title>
-    <link href="https://midsummerwang.github.io/11685.html"/>
-    <id>https://midsummerwang.github.io/11685.html</id>
-    <published>2023-06-26T14:00:01.000Z</published>
-    <updated>2023-09-17T10:46:03.854Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="毕业前的最后一次校园长跑"><a href="#毕业前的最后一次校园长跑" class="headerlink" title="毕业前的最后一次校园长跑"></a>毕业前的最后一次校园长跑</h1><p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230626221321.jpg"></p><p>　　2023年6月26日晚，决定去学校跑一跑，一开始说是怎么也要跑个5公里(像以前一样)，但最后发现真跑不动了&#x2F;(ㄒoㄒ)&#x2F;~~。说起来也有一年多快两年的时间没怎么跑了，中间虽然陆陆续续跑过几次，但一直没有长期坚持，跑步这玩意长时间不跑真的会退步，真的。现在跑3公里+，速度还慢的时间足够以前跑完5公里了，甚至还有几分钟多，而且跑完更是直接累的不得了(虽然腿依旧不会酸。此时此刻，万千思绪，加油吧，少年……</p><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/20230626223519.jpg" alt="" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/midsummerwang/imagehosting@main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230626221313.jpg" alt="" style="zoom:25%;" /><hr><ul><li>本站第一篇正式博客</li></ul>]]></content>
-    
-    
-    <summary type="html">纪念本科毕业前夕的那段日子......</summary>
-    
-    
-    
-    <category term="毕业季" scheme="https://midsummerwang.github.io/categories/%E6%AF%95%E4%B8%9A%E5%AD%A3/"/>
-    
-    
-    <category term="跑步" scheme="https://midsummerwang.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
-    
-    <category term="运动" scheme="https://midsummerwang.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    <category term="Vue框架" scheme="https://midsummerwang.github.io/tags/Vue%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
